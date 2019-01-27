@@ -1,12 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var core = require("./build/Release/lava_node.node");
-function globalInit() {
+var Core;
+(function (Core) {
     core.global_init();
-}
-exports.globalInit = globalInit;
-function loadFile(filePath) {
-    core.load_file(filePath);
-}
-exports.loadFile = loadFile;
+    function loadFile(filePath) {
+        core.load_file(filePath);
+    }
+    Core.loadFile = loadFile;
+})(Core = exports.Core || (exports.Core = {}));
 //# sourceMappingURL=index.js.map

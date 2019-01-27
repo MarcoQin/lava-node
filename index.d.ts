@@ -3,5 +3,8 @@ declare module "*.node" {
     export default value;
 }
 
-export function globalInit() : null
-export function loadFile(filePath: string) : null
+declare module "lava-node" {
+    export namespace Core {
+        export function loadFile(filePath: string) : null
+    }
+}

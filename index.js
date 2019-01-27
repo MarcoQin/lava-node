@@ -8,5 +8,17 @@ var Core;
         core.load_file(filePath);
     }
     Core.loadFile = loadFile;
+    function pause() {
+        core.pause();
+    }
+    Core.pause = pause;
+    function stop() {
+        core.stop();
+    }
+    Core.stop = stop;
+    function setVolume(volume) {
+        core.set_volume(volume);
+    }
+    Core.setVolume = setVolume;
 })(Core = exports.Core || (exports.Core = {}));
 //# sourceMappingURL=index.js.map

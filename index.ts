@@ -5,4 +5,16 @@ export namespace Core {
     export function loadFile(filePath:string) {
         core.load_file(filePath)
     }
+    
+    export function pause() {
+        core.pause()
+    }
+
+    export function stop() {
+        core.stop()
+    }
+
+    export function setVolume(volume: number) {
+        core.set_volume(volume)
+    }
 }
